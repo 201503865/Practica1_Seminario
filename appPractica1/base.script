@@ -1,0 +1,11 @@
+use practica;
+CREATE TABLE IF NOT EXISTS `videojuego`(
+  `id` int(11) NOT NULL,
+  `nombre` varchar(200) NOT NULL,
+  `ruta` varchar(200) NOT NULL,
+  `compania` varchar(200) NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+ 
+ALTER TABLE `videojuego` ADD PRIMARY KEY (`id`);
+ALTER TABLE `videojuego` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
